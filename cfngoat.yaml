@@ -643,6 +643,8 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data-science"
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: True
 
   LogsBucket:
     # not encrypted
